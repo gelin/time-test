@@ -8,7 +8,6 @@ public class Main {
     public static void main(String[] args) {
         JUnitCore junit = new JUnitCore();
         junit.addListener(new TextListener(System.out));
-        junit.run(TimeOffsetTest.class);
-        junit.run(TimeDiffTest.class);
+        junit.run(TimeOffsetTest.class, TimeDiffTest.class);
     }
 }
